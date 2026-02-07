@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adam Air Surf School – Kuta Beach</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Open Sans', Arial, sans-serif;
+      background: #f4f4f4;
+      color: #333;
+    }
+    .lang-bar {
+      text-align: right;
+      padding: 0.5rem 1rem;
+      background: #fff;
+    }
+    .lang-bar select {
+      padding: 0.3rem;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      font-family: 'Open Sans', sans-serif;
+    }
+    header {
+      background: url('images/Kopbanner.png') center/cover no-repeat;
+      height: 300px;
+      max-width: 1300px;
+      margin: 0 auto;
+    }
+    .title-block {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: #fff;
+    }
+    .title-block h1 {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2.4rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+    .title-block p {
+      margin: 0.5rem 0 0;
+      font-size: 1.2rem;
+    }
+    .intro {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: white;
+    }
+    .intro h2 {
+      font-family: 'Montserrat', sans-serif;
+      color: #f57c00;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+    }
+    .intro p {
+      max-width: 800px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 1.5rem;
+      text-align: center;
+    }
+    .card h2 {
+      font-family: 'Montserrat', sans-serif;
+      color: #f57c00;
+      text-transform: uppercase;
+      margin-top: 0;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+    table th, table td {
+      padding: 0.8rem;
+      text-align: center;
+    }
+    table th {
+      background: #0d47a1;
+      color: white;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    table tr:nth-child(even) { background: #f9f9f9; }
+    .map {
+      margin-top: 1rem;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .gallery img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    .gallery p {
+      margin-top: 0.5rem;
+      font-weight: bold;
+      color: #0d47a1;
+    }
+    .cta {
+      text-align: center;
+      margin: 2rem;
+    }
+    .cta a {
+      background: linear-gradient(135deg, #f57c00, #ef6c00);
+      color: white;
+      padding: 1rem 2rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+    footer {
+      background: #0d47a1;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Language selector -->
+  <div class="lang-bar">
+    <label for="language">Language: </label>
+    <select id="language" onchange="changeLanguage(this.value)">
+      <option value="en" selected>English</option>
+      <option value="id">Bahasa Indonesia</option>
+      <option value="nl">Nederlands</option>
+      <option value="de">Deutsch</option>
+      <option value="fr">Français</option>
+      <option value="ru">Русский</option>
+    </select>
+  </div>
+
+  <header></header>
+
+  <section class="title-block">
+    <h1>Adam Air Surf School</h1>
+    <p>Kuta Beach, Bali</p>
+  </section>
+
+  <section class="intro">
+    <h2>Welcome to Adam Air Surf School</h2>
+    <p>
+      Specially designed for those who want to learn surfing in Bali, 
+      our instructors will guide you to become confident on the waves. 
+      Choose the class that suits you best: private, semi-private, or group lessons. 
+      Enjoy our pick-up service in selected areas to make reaching us easier. 
+      Right after the lesson, you’ll be riding waves smoothly like a pro!
+    </p>
+  </section>
+
+  <div class="container">
+    <div class="card">
+      <h2>Location</h2>
+      <p><strong>Address:</strong> Jl. Pantai Kuta, Kuta, Badung Regency, Bali</p>
+      <p><strong>Route:</strong> Adam Air Surf School, Kuta Beach</p>
+      <div class="map">
+              </div>
+      <p>
+        <a href="https://www.google.com/maps/place/Adam+Air+Surf+School/@-8.717,115.168,17z" target="_blank">
+          📍 View on Google Maps
+        </a>
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Opening Hours & Contact</h2>
+      <p>Open daily from <strong>07:00 – 19:00</strong></p>
+      <hr>
+      <p><strong>Phone/WhatsApp:</strong> +62 878 6167 8335</p>
+      <p><strong>Email:</strong> adamairsurf@gmail.com</p>
+    </div>
+
+    <div class="card">
+      <h2>Prices</h2>
+      <table>
+        <tr><th>Lesson Option</th><th>Price</th></tr>
+        <tr><td>Private lesson</td><td>200,000 IDR / hour</td></tr>
+        <tr><td>Semi-private lesson</td><td>200,000 IDR / hour</td></tr>
+        <tr><td>Group lesson</td><td>200,000 IDR / hour</td></tr>
+      </table>
+    </div>
+
+    <div class="card">
+      <h2>Extra Service</h2>
+      <p>Pick-up service available in selected areas.</p>
+    </div>
+  </div>
+  <section class="gallery">
+    <div>
+      <img src="images/Group lesson.jpeg" alt="Group surf lesson">
+      <p>Group Lesson</p>
+    </div>
+    <div>
+      <img src="images/Intermediate lesson.jpeg" alt="Intermediate surf lesson">
+      <p>Intermediate Lesson</p>
+    </div>
+    <div>
+      <img src="images/Kids Lesson.jpeg" alt="Kids surf lesson">
+      <p>Kids Lesson</p>
+    </div>
+    <div>
+      <img src="images/Private lesson.jpeg" alt="Private surf lesson">
+      <p>Private Lesson</p>
+    </div>
+  </section>
+
+  <div class="cta">
+    <a href="https://wa.me/6287861678335" target="_blank">Book now via WhatsApp</a>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Adam Air Surf School – Kuta Beach, Bali</p>
+    <p>Website Designer Johan Sopamena Alias DJ Sopamena</p>
+  </footer>
+
+  <script>
+    const translations = {
+      en: {
+        introTitle: "Welcome to Adam Air Surf School",
+        introText: "Specially designed for those who want to learn surfing in Bali, our instructors will guide you to become confident on the waves. Choose the class that suits you best: private, semi-private, or group lessons. Enjoy our pick-up service in selected areas to make reaching us easier. Right after the lesson, you’ll be riding waves smoothly like a pro!"
+      },
+      id: {
+        introTitle: "Selamat datang di Adam Air Surf School",
+        introText: "Dirancang khusus bagi mereka yang ingin belajar berselancar di Bali, instruktur kami akan membimbing Anda agar percaya diri di atas ombak. Pilih kelas yang sesuai: privat, semi-privat, atau kelompok. Nikmati layanan penjemputan di area tertentu agar lebih mudah datang. Setelah pelajaran, Anda akan berselancar seperti profesional!"
+      },
+      nl: {
+        introTitle: "Welkom bij Adam Air Surf School",
+        introText: "Speciaal ontworpen voor iedereen die wil leren surfen in Bali. Onze instructeurs helpen je zelfverzekerd op de golven te staan. Kies de les die bij je past: privé, semi-privé of groepslessen. Maak gebruik van onze pick-up service in geselecteerde gebieden. Na de les surf je soepel als een pro!"
+      },
+      de: {
+        introTitle: "Willkommen bei Adam Air Surf School",
+        introText: "Speziell für alle, die Surfen auf Bali lernen möchten. Unsere Lehrer helfen dir, sicher auf den Wellen zu stehen. Wähle den Kurs, der zu dir passt: Privat, Semi-Privat oder Gruppe. Nutze unseren Abholservice in ausgewählten Gebieten. Nach dem Unterricht surfst du wie ein Profi!"
+      },
+      fr: {
+        introTitle: "Bienvenue à Adam Air Surf School",
+        introText: "Spécialement conçu pour ceux qui veulent apprendre à surfer à Bali. Nos instructeurs vous aideront à prendre confiance sur les vagues. Choisissez le cours qui vous convient: privé, semi-privé ou en groupe. Profitez de notre service de ramassage dans certaines zones. Après le cours, vous surferez comme un pro!"
+      },
+      ru: {
+        introTitle: "Добро пожаловать в Adam Air Surf School",
+        introText: "Специально для тех, кто хочет научиться серфингу на Бали. Наши инструкторы помогут вам уверенно чувствовать себя на волнах. Выберите подходящий урок: индивидуальный, полуиндивидуальный или групповой. Воспользуйтесь услугой трансфера в выбранных районах. После урока вы будете кататься на волнах как профессионал!"
+      }
+    };
+
+    function changeLanguage(lang) {
+      document.querySelector(".intro h2").textContent = translations[lang].introTitle;
+      document.querySelector(".intro p").textContent = translations[lang].introText;
+    }
+  </script>
+</body>
+</html>
